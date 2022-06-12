@@ -6,6 +6,7 @@ fun main() {
     myCar.maxSpeed = 240
     println("Maxspeed is ${myCar.maxSpeed}")
     println("Model is ${myCar.myModel}")
+
 }
 
 class Car(){
@@ -22,7 +23,7 @@ class Car(){
         set(value) {
             field = if(value>0) value else throw IllegalArgumentException("Maxspeed connot be less than 0")
         }
-
+    
     var myModel: String = "M5"
         private set
 
